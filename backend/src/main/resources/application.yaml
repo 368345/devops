@@ -2,10 +2,10 @@ server:
   port: 8081
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/toutou
-    username : postgres
-    password : sofiene
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://localhost:3306/med?createDatabaseIfNotExist=true
+    username : root
+    password :
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -13,5 +13,5 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    database: postgresql
-    database-platform:  org.hibernate.dialect.PostgreSQLDialect
+    database: mysql
+    database-platform:  org.hibernate.dialect.MySQLDialect

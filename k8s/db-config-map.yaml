@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: db
+  namespace: devops-project
 data:
   database-name: "test"
-  database-username : "postgres"
-  
+  database-username: "postgres"

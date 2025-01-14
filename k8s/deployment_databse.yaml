@@ -40,5 +40,4 @@ spec:
               name: database-storage
       volumes:
         - name: database-storage
-          persistentVolumeClaim:
-            claimName: azure-managed-disk-pvc
+          emptyDir: {}

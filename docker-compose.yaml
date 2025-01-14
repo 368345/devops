@@ -2,7 +2,7 @@ version: '3'
 services:
   backend:
     container_name: backend
-    image: sofienech/backend:v1
+    image: mohamedsaleck/backend:v1
     ports:
       - "8000:8000"
     environment:
@@ -11,7 +11,7 @@ services:
       - db
   frontend:
     container_name: frontend
-    image: sofienech/frontend:v1
+    image: mohamedsaleck/frontend:v1
     ports:
       - "3000:3000"
     environment:
@@ -24,7 +24,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_PASSWORD=sofiene
+      - POSTGRES_PASSWORD=med
       - POSTGRES_USER=postgres
       - POSTGRES_DB=test
 
