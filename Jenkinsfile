@@ -14,7 +14,7 @@ pipeline {
         stage('Init'){
             agent any
             steps {
-                bat 'docker login -u %DOCKERHUB_CREDENTIALS_USR% -p %DOCKERHUB_CREDENTIALS_PSW%
+                bat 'docker login -u %DOCKERHUB_CREDENTIALS_USR% -p %DOCKERHUB_CREDENTIALS_PSW%'  // Fixed the missing closing quote
             }
         }
 

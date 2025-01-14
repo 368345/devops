@@ -18,7 +18,7 @@ spec:
         app: backend
     spec:
       containers:
-        - image: sofienech/gestion_backend:10
+        - image: mohamedsaleck/gestion_backend:latest
           name: backend
           ports:
             - containerPort: 8081
